@@ -1,0 +1,16 @@
+{
+  "name": "trackdp-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebSocket traceroute agent for the trackdp visualizer",
+  "type": "module",
+  "main": "",
+  "scripts": {
+    "start": "node agent.mjs",
+    "dev": "node --watch agent.mjs",
+    "check": "node scripts/check-env.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

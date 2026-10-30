@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Config / secrets
+trackdp-agent/trackdp.config.json
+trackdp-visualizer/.env*.local
+.env
+.env*.local
+
+# Logs & OS
+*.log
+.DS_Store
+.idea/

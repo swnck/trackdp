@@ -1,0 +1,18 @@
+{
+  "name": "trackdp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "trackdp — WebSocket traceroute agent + Next.js visualizer",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "check": "node trackdp-agent/scripts/check-env.mjs",
+    "setup": "node trackdp-agent/setup.mjs",
+    "agent": "pnpm --filter trackdp-agent start",
+    "visualizer": "pnpm --filter trackdp-visualizer dev",
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm --filter trackdp-visualizer build"
+  }
+}
